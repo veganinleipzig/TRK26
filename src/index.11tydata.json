@@ -1,0 +1,302 @@
+{
+  "title": "Tierrechtskongress Leipzig 2026",
+  "displayTitle": "Tierrechts&shy;kongress Leipzig 2026",
+  "subtitle": "23.-24. Mai 2026 in der Ostwache in Leipzig",
+  "siteName": "Tierrechtskongress Leipzig",
+  "url_mainfill": "/images/hero/header.png",
+  "bodyClass": "variant-one",
+  "hero": {
+    "kicker": "Variante 1 · Plakat Brutalismus",
+    "imageAltSuffix": "Headerbild"
+  },
+  "navigation": {
+    "ariaLabel": "Sprungnavigation",
+    "items": [
+      {
+        "href": "#spenden",
+        "ariaLabel": "Spendenaufruf",
+        "icon": "coins",
+        "label": "Spendenaufruf",
+        "shortLabel": "Spende"
+      },
+      {
+        "href": "#programm",
+        "ariaLabel": "Vorträge",
+        "icon": "microphone-alt",
+        "label": "Vorträge",
+        "shortLabel": "Talks"
+      },
+      {
+        "href": "#rahmenprogramm",
+        "ariaLabel": "Rahmenprogramm",
+        "icon": "star",
+        "label": "Rahmenprogramm",
+        "shortLabel": "Extra"
+      },
+      {
+        "href": "#fragen",
+        "ariaLabel": "Fragen und Antworten",
+        "icon": "question-circle",
+        "label": "Fragen & Antworten",
+        "shortLabel": "FAQ"
+      }
+    ]
+  },
+  "ui": {
+    "fallbackImageAlt": "Bild",
+    "speakerTopicLabel": "Thema:",
+    "emailLabel": "E-Mail:",
+    "emailAriaLabel": "E-Mail-Adresse",
+    "emailHint": "Bitte die Adresse zum Schreiben entsprechend zusammensetzen."
+  },
+  "congress": {
+    "donate": {
+      "title": "Unterstütze uns",
+      "text": "Mit deiner Spende hilfst du dabei, Räume, Technik, Materialien und das Rahmenprogramm für den Kongress zu finanzieren.",
+      "ctaLabel": "Zum Spendenaufruf",
+      "href": "https://spenden.twingle.de/transformation-fordern-e-v/tierrechtskongress/tw6983028ce7f5e/page"
+    },
+    "quickFacts": [
+      {
+        "icon": "clock",
+        "label": "Zeit",
+        "value": "23.-24.05.2026"
+      },
+      {
+        "icon": "map-pin",
+        "label": "Ort",
+        "value": "Ostwache, Leipzig",
+        "href": "https://www.openstreetmap.org/?mlat=51.3366735&mlon=12.419064#map=14/51.33667/12.41906"
+      },
+      {
+        "icon": "coins",
+        "label": "Eintritt",
+        "value": "kostenlos"
+      },
+      {
+        "icon": "microphone-alt",
+        "label": "Vorträge",
+        "value": "10"
+      }
+    ],
+    "intro": {
+      "paragraphs": [
+        "Am Wochenende vom 23. bis 24. Mai 2026 findet in der Ostwache in Leipzig der Leipziger Tierrechtskongress statt. Organisiert wird der Kongress von einer Gruppe Freiwilliger aus vielen Leipziger veganen und Tierbefreiungsgruppen.",
+        "Dabei setzen sich zahlreiche Referent*innen inhaltlich und kritisch mit verschiedenen Aspekten der Arbeit für Tierbefreiung und Tierrechte auseinander. Es wird Vorträge zu Tierrettung aus Krisengebieten, Tierethik, Ausstieg aus der Tierwirtschaft, antispeziesistische Arbeit im Bildungskontext und weiteren spannenden Themen geben.",
+        "Der Kongress wird neben den Vorträgen auch Zeit für informellen Austausch sowie Anschlussdiskussionen mit den Referent*innen bieten. Das Ziel des Kongresses ist, die Tierbewegung und interessierte Personen zu vernetzen sowie gemeinsame Schnittmengen und Herausforderungen aktivistischer Praxis zu diskutieren."
+      ]
+    },
+    "overview": {
+      "title": "Vorträge",
+      "days": [
+        {
+          "key": "samstag",
+          "label": "Samstag"
+        },
+        {
+          "key": "sonntag",
+          "label": "Sonntag"
+        }
+      ]
+    },
+    "speakers": [
+      {
+        "day": "samstag",
+        "badge": "Eröffnung",
+        "image": "/images/placedog/speaker-07.jpg",
+        "imageAlt": "Thomas Hecquet",
+        "name": "Thomas Hecquet",
+        "session": "10:00 Uhr",
+        "topic": "Thema folgt"
+      },
+      {
+        "day": "samstag",
+        "image": "/images/placedog/speaker-08.jpg",
+        "imageAlt": "Hilal Sezgin",
+        "name": "Hilal Sezgin",
+        "session": "11:30 Uhr",
+        "topic": "Thema folgt"
+      },
+      {
+        "day": "samstag",
+        "image": "/images/placedog/speaker-09.jpg",
+        "imageAlt": "Marie Kolb und Josephine Götze",
+        "name": "Marie Kolb & Josephine Götze",
+        "session": "13:00 Uhr",
+        "topic": "Thema folgt"
+      },
+      {
+        "day": "samstag",
+        "image": "/images/placedog/speaker-10.jpg",
+        "imageAlt": "Rike Schmitz",
+        "name": "Rike Schmitz",
+        "session": "14:30 Uhr",
+        "topic": "Thema folgt"
+      },
+      {
+        "day": "samstag",
+        "image": "/images/placedog/speaker-11.jpg",
+        "imageAlt": "Tiphaine Lagarde",
+        "name": "Tiphaine Lagarde",
+        "session": "16:00 Uhr",
+        "topic": "Thema folgt"
+      },
+      {
+        "day": "samstag",
+        "badge": "Podium",
+        "image": "/images/placedog/speaker-12.jpg",
+        "imageAlt": "Podiumsdiskussion Kampagnen",
+        "name": "Podiums&shy;diskussion",
+        "org": "ASS + PETA + Animal Equality",
+        "session": "17:30 Uhr",
+        "topic": "Kampagnen?"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/placedog/speaker-01.jpg",
+        "imageAlt": "Notpfote",
+        "name": "Notpfote",
+        "session": "10:00 Uhr",
+        "topic": "Thema folgt"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/placedog/speaker-02.jpg",
+        "imageAlt": "Umweltbildungswerk",
+        "name": "Umwelt&shy;bildungs&shy;werk",
+        "session": "11:30 Uhr",
+        "topic": "Thema folgt"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/placedog/speaker-03.jpg",
+        "imageAlt": "Friedrich Mülln",
+        "name": "Friedrich Mülln",
+        "session": "13:00 Uhr",
+        "topic": "Thema folgt"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/placedog/speaker-04.jpg",
+        "imageAlt": "Michele Dressel",
+        "name": "Michele Dressel",
+        "session": "14:30 Uhr",
+        "topic": "Thema folgt"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/placedog/speaker-05.jpg",
+        "imageAlt": "Anna Schubert und Hendrik Hassel",
+        "name": "Anna Schubert und Hendrik Hassel",
+        "session": "16:00 Uhr",
+        "topic": "Thema folgt"
+      },
+      {
+        "day": "sonntag",
+        "badge": "Podium",
+        "image": "/images/placedog/speaker-06.jpg",
+        "imageAlt": "Podiumsdiskussion Ziviler Ungehorsam",
+        "name": "Podiums&shy;diskussion",
+        "org": "Animal Rebellion + GGDT + Tierbefreier:innen + Neue Generation",
+        "session": "17:30 Uhr",
+        "topic": "Ziviler Ungehorsam"
+      }
+    ],
+    "framework": {
+      "title": "Rahmen&shy;programm",
+      "items": [
+        {
+          "image": "/images/placedog/framework-01.jpg",
+          "imageAlt": "Hartmut Kiewert",
+          "title": "Hartmut Kiewert",
+          "eyebrow": "Posterstand",
+          "paragraphs": [
+            "Seit 2008 setzt sich der Künstler Hartmut Kiewert in seiner Malerei mit dem Mensch-Tier-Verhältnis auseinander und stellt tradierte Normen und Machtverhältnisse in Frage. Seine Bilder zeigen utopische Perspektiven, in denen Tiere befreit sind und sich Räume zurückholen, die sonst von Menschen dominiert werden.",
+            "Hartmut arbeitet mit veganen Materialien und verbindet seine Kunst mit herrschaftskritischen Fragen rund um Tierausbeutung und andere Formen von Unterdrückung."
+          ]
+        },
+        {
+          "image": "/images/placedog/framework-02-new.jpg",
+          "imageAlt": "Küfa",
+          "title": "Küfa",
+          "eyebrow": "Essensstand",
+          "paragraphs": [
+            "An beiden Tagen wird es eine vegane Küfa geben. Dort bekommst du warmes Essen, Kaffee, Kuchen und kleine Snacks gegen Spende.",
+            "Die Küfa schafft Raum für Begegnung zwischen den Vorträgen und ist ein guter Ort, um ins Gespräch zu kommen, sich zu vernetzen und zwischendurch kurz durchzuatmen."
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Fragen und Antworten",
+      "heading": "Häufige Fragen",
+      "items": [
+        {
+          "question": "Kostet die Teilnahme etwas?",
+          "answer": "Nein, die Teilnahme am Leipziger Tierrechtskongress ist kostenlos. Da der Kongress dennoch erhebliche Kosten verursacht, wird es vor Ort die Möglichkeit geben, freiwillig zu spenden."
+        },
+        {
+          "question": "Wo findet der Kongress statt?",
+          "answer": "Der Kongress findet 2026 in der Ostwache in Leipzig statt. Wir freuen uns sehr, dort einen Ort gefunden zu haben, an dem Vorträge, Austausch und Rahmenprogramm zusammenkommen können."
+        },
+        {
+          "question": "Was passiert bei Regen?",
+          "answer": "Natürlich hoffen wir auf gutes Wetter. Falls es regnet, werden wir den Außenbereich so gut es geht mit Pavillons und Zelten überdachen, sodass geplante Aktivitäten und Stände weiterhin stattfinden können. Die Vorträge finden drinnen statt."
+        },
+        {
+          "question": "Gibt es vor Ort etwas zu essen und trinken?",
+          "answer": "Ja. Vor Ort wird es eine vegane Küfa mit warmem Essen, Kaffee, Kuchen und kleinen Snacks gegen Spende geben."
+        },
+        {
+          "question": "Ist der Kongress barrierefrei?",
+          "answer": "Unser Anspruch ist es, den Tierrechtskongress für möglichst viele Menschen zugänglich zu machen. Wir versuchen, dass Veranstaltungen und Verpflegungsangebote auch für Menschen mit Gehbehinderung gut erreichbar sind und geeignete sanitäre Anlagen zur Verfügung stehen. Wenn ihr konkrete Bedarfe habt, schreibt uns bitte vorab, damit wir uns möglichst gut darauf einstellen können."
+        },
+        {
+          "question": "Darf ich meinen Hund mitbringen?",
+          "answer": "Falls es euch nicht anders möglich ist, dürfen Hunde und andere Tiere mitgebracht werden. Bitte führt sie immer an der Leine und verlasst den Raum, wenn sie unruhig werden, damit Vorträge und Gespräche nicht gestört werden."
+        },
+        {
+          "question": "Gibt es eine Quote für Referent*innen?",
+          "answer": "FLINTA*-Personen sind in der Tierrechts- und Tierbefreiungsbewegung stark vertreten. Deshalb versuchen wir auch bei den Vorträgen, deutlich mehr FLINTA*-Personen als Referent*innen zu gewinnen."
+        },
+        {
+          "question": "Ich bin nicht sehr tief in der Materie drin. Ist der Kongress trotzdem etwas für mich?",
+          "answer": "Ja. Der Kongress soll ausdrücklich auch Menschen ansprechen, die sich neu oder erst seit kurzem mit Tierrechten und Tierbefreiung beschäftigen. Er bietet die Möglichkeit, Wissen zu vertiefen, mit anderen ins Gespräch zu kommen und vielleicht selbst Lust auf weiteres Engagement zu bekommen."
+        },
+        {
+          "question": "Werden die Vorträge aufgezeichnet?",
+          "answer": "Ob und welche Vorträge aufgezeichnet werden, stimmen wir individuell mit den Referent*innen ab. Wenn es möglich ist, möchten wir Vorträge dokumentieren. Unabhängig davon lohnt sich der Besuch vor Ort, weil der Kongress auch dem Austausch und Kennenlernen dient."
+        },
+        {
+          "question": "Gibt es Möglichkeiten mitzumachen? Braucht ihr Hilfe?",
+          "answer": "Ja. Wir freuen uns über Menschen, die Zeit und Motivation mitbringen und den Kongress unterstützen möchten, etwa beim Auf- und Abbau, Einlass, Awareness, Technik, Übersetzungen oder als Tageshelfer*in. Wenn ihr mitmachen möchtet, schreibt uns gerne."
+        }
+      ],
+      "team": [
+        {
+          "name": "Kontakt",
+          "org": "Fragen rund um Teilnahme und Ablauf",
+          "emailUser": "kontakt-ersetzen",
+          "emailDomain": "beispiel-domain-ersetzen",
+          "emailTld": "de"
+        }
+      ]
+    },
+    "exclusion": {
+      "title": "Ausschlussklausel",
+      "paragraphs": [
+        "Als Veranstalter*innen behalten wir uns vor, Personen von der Veranstaltung auszuschließen und ihnen den Zutritt zu verwehren, wenn sie nationalistische, sexistische, ableistische, rassistische, homo-, inter- oder transfeindliche Positionen vertreten, Verschwörungsideologien oder Querfront-Inhalte verbreiten oder rechtsextremen Parteien, Organisationen oder Strukturen zuzuordnen sind. Das gilt auch für Personen, die bereits durch antisemitische, rassistische, nationalistische oder andere menschenverachtende Äußerungen aufgefallen sind."
+      ]
+    },
+    "imprint": {
+      "heading": "Impressum",
+      "paragraphs": [
+        "Angaben gemäß § 5 TMG",
+        "Verantwortlich für diese Website ist eine Gruppe von Freiwilligen aus Leipziger veganen und Tierbefreiungsgruppen. Die vollständigen Kontaktdaten und die ladungsfähige Anschrift werden hier noch ergänzt.",
+        "Kontakt: kontakt-ersetzen [at] beispiel-domain-ersetzen [punkt] de",
+        "Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV: Angaben folgen.",
+        "Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber*innen verantwortlich."
+      ]
+    }
+  }
+}

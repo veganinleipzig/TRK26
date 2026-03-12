@@ -1,15 +1,25 @@
-<head>
-	<title>{{ title }} | Vegan in Leipzig</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}" />
-	<link rel="stylesheet" href="{{ '/assets/css/custom.css' | url }}" />
-	<noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | url }}" /></noscript>
-</head>
-
-
-<section class="header">
-    <img 
-        src="{{ '/images/Vegan-in-Leipzig-Logo-300x208.png' | url }}" alt="Vegan in Leipzig Logo" />
+<section class="hero">
+    <div class="hero-media">
+        <img src="{% if '://' in url_mainfill %}{{ url_mainfill }}{% else %}{{ url_mainfill | url }}{% endif %}" alt="{{ title }} {{ hero.imageAltSuffix }}" />
+    </div>
+    <div class="hero-overlay">
+        <div class="hero-copy">
+            <h1>{{ (displayTitle or title) | safe }}</h1>
+        </div>
+        <div class="info-line hero-info-line">
+            {% for fact in congress.quickFacts %}
+            <div class="icon">
+                <span class="fact-icon fa-solid fa-{{ fact.icon }}" aria-hidden="true"></span>
+                <div class="fact-copy">
+                    <span class="label">{{ fact.label }}</span>
+                    {% if fact.href %}
+                    <a class="value fact-link" href="{{ fact.href }}" target="_blank" rel="noopener noreferrer">{{ fact.value }}</a>
+                    {% else %}
+                    <span class="value">{{ fact.value }}</span>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </section>
-    <img class="filler" src="{{ '/images/spacer.png' | url }}" alt="Vegan in Leipzig Logo" />

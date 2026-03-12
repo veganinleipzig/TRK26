@@ -1,0 +1,113 @@
+{% macro statCards(items) %}
+<div class="stats-container">
+    {% for item in items %}
+    <div class="stat-card">
+        <span class="stat-number">{{ item.value }}</span>
+        <span class="stat-label">{{ item.label }}</span>
+        {% if item.icon %}
+        <i class="fa-solid fa-{{ item.icon }}"></i>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro infoGrid(section, ui) %}
+<div class="info-grid{% if not (section.image or section.labelLines or section.label) %} info-grid--single{% endif %}">
+    {% set hasLabel = section.image or section.labelLines or section.label %}
+    {% if hasLabel %}
+    <div class="info-label">
+        {% if section.image %}
+        <img src="{{ section.image | url }}" alt="{{ section.imageAlt or section.title or section.label or ui.fallbackImageAlt }}">
+        {% elif section.labelLines %}
+        {{ section.labelLines | join('<br>') | safe }}
+        {% else %}
+        {{ section.label | safe }}
+        {% endif %}
+    </div>
+    {% endif %}
+    <div class="info-content">
+        {% if section.title %}
+        <h2>{{ section.title | safe }}</h2>
+        {% endif %}
+        {% if section.eyebrow %}
+        <strong>{{ section.eyebrow | safe }}</strong>
+        {% endif %}
+        {% for paragraph in section.paragraphs or [] %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+        {% for line in section.lines or [] %}
+        <div class="info-item">{{ line }}</div>
+        {% endfor %}
+    </div>
+</div>
+{% endmacro %}
+
+{% macro speakerCard(speaker, ui) %}
+<div class="speaker-card">
+    <div class="speaker-image">
+        <img src="{{ speaker.image | url }}" alt="{{ speaker.imageAlt or speaker.name }}">
+    </div>
+    <div class="speaker-info">
+        {% if speaker.badge %}
+        <div class="speaker-status">
+            <span class="badge-opt">{{ speaker.badge }}</span>
+        </div>
+        {% endif %}
+        <div class="speaker-header">
+            <h3 class="speaker-name">{{ speaker.name | safe }}</h3>
+            {% if speaker.session %}
+            <div class="speaker-session">
+                <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                <span>{{ speaker.session }}</span>
+            </div>
+            {% endif %}
+        </div>
+        {% if speaker.org %}
+        <span class="speaker-org">{{ speaker.org | safe }}</span>
+        {% endif %}
+        <p class="speaker-topic"><strong>{{ ui.speakerTopicLabel }}</strong> {{ speaker.topic | safe }}</p>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro sectionBanner(title) %}
+<div class="generic-section">
+    <h1><strong>{{ title | safe }}</strong></h1>
+</div>
+{% endmacro %}
+
+{% macro sectionDivider() %}
+<div class="generic-section generic-section--divider" aria-hidden="true"></div>
+{% endmacro %}
+
+{% macro teamMember(member, ui) %}
+<div class="speaker-card team-member">
+    <div class="speaker-info">
+        <h3 class="speaker-name">{{ member.name }}</h3>
+        <span class="speaker-org">{{ member.org }}</span>
+        <p class="speaker-topic">
+            <strong>{{ ui.emailLabel }}</strong>
+            <span class="mail-obfuscation" aria-label="{{ ui.emailAriaLabel }}">
+                <span>{{ member.emailUser }}</span>
+                <span aria-hidden="true"> [at] </span>
+                <span>{{ member.emailDomain }}</span>
+                <span aria-hidden="true"> [punkt] </span>
+                <span>{{ member.emailTld }}</span>
+            </span>
+        </p>
+        <p class="contact-note">{{ ui.emailHint }}</p>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro noteCard(section) %}
+<div class="sidebar-note">
+    {% if section.title %}
+    <h3>{{ section.title | safe }}</h3>
+    {% endif %}
+    {% for paragraph in section.paragraphs or [] %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+</div>
+{% endmacro %}

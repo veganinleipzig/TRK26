@@ -49,7 +49,7 @@
 
 				$nav_a
 					.scrolly({
-						speed: 1000,
+						speed: 300,
 						offset: function() { return $nav.height(); }
 					})
 					.on('click', function() {
@@ -117,7 +117,114 @@
 
 	// Scrolly.
 		$('.scrolly').scrolly({
-			speed: 1000
+			speed: 300,
+			offset: function() {
+				var stickyNav = document.querySelector('.site-sticky-nav');
+				return stickyNav ? stickyNav.offsetHeight + 24 : 24;
+			}
 		});
+
+	// Sticky nav active section state.
+		(function() {
+
+			var stickyNav = document.querySelector('.site-sticky-nav');
+			var navLinks = Array.from(document.querySelectorAll('.site-sticky-nav .hero-jumpnav a[href^="#"]'));
+
+			if (!stickyNav || navLinks.length === 0)
+				return;
+
+			var sections = navLinks
+				.map(function(link) {
+					var id = link.getAttribute('href');
+					var section = id ? document.querySelector(id) : null;
+
+					if (!section)
+						return null;
+
+					return {
+						id: id,
+						link: link,
+						section: section
+					};
+				})
+				.filter(Boolean);
+
+			if (sections.length === 0)
+				return;
+
+			var activeId = null;
+			var pendingId = null;
+			var activeLinkTimeout = null;
+			var scrollLockUntil = 0;
+
+			var setActiveLink = function(id) {
+				activeId = id;
+				navLinks.forEach(function(link) {
+					link.classList.toggle('is-active', link.getAttribute('href') === id);
+				});
+			};
+
+			var getCurrentSectionId = function() {
+				var marker = window.scrollY + stickyNav.offsetHeight + 28;
+				var currentId = sections[0].id;
+
+				sections.forEach(function(item) {
+					if (item.section.offsetTop <= marker)
+						currentId = item.id;
+				});
+
+				return currentId;
+			};
+
+			var scheduleActiveLinkUpdate = function() {
+				if (Date.now() < scrollLockUntil)
+					return;
+
+				var nextId = getCurrentSectionId();
+
+				if (nextId === activeId) {
+					pendingId = null;
+					if (activeLinkTimeout) {
+						window.clearTimeout(activeLinkTimeout);
+						activeLinkTimeout = null;
+					}
+					return;
+				}
+
+				if (pendingId === nextId && activeLinkTimeout)
+					return;
+
+				pendingId = nextId;
+
+				if (activeLinkTimeout)
+					window.clearTimeout(activeLinkTimeout);
+
+				activeLinkTimeout = window.setTimeout(function() {
+					setActiveLink(nextId);
+					pendingId = null;
+					activeLinkTimeout = null;
+				}, 120);
+			};
+
+			navLinks.forEach(function(link) {
+				link.addEventListener('click', function() {
+					if (activeLinkTimeout) {
+						window.clearTimeout(activeLinkTimeout);
+						activeLinkTimeout = null;
+					}
+
+					scrollLockUntil = Date.now() + 450;
+					pendingId = null;
+					setActiveLink(link.getAttribute('href'));
+					window.setTimeout(scheduleActiveLinkUpdate, 470);
+				});
+			});
+
+			window.addEventListener('scroll', scheduleActiveLinkUpdate, { passive: true });
+			window.addEventListener('resize', scheduleActiveLinkUpdate);
+			window.addEventListener('load', scheduleActiveLinkUpdate);
+			setActiveLink(getCurrentSectionId());
+
+		})();
 
 })(jQuery);

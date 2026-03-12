@@ -1,0 +1,192 @@
+settings:
+  hide: true
+  content:
+    merge: true
+
+media:
+  input: src/images
+  output: /images
+
+content:
+  - name: site
+    label: Site Content
+    type: file
+    path: src/index.11tydata.json
+    format: json
+    fields:
+      - name: title
+        label: Browser Title
+        type: string
+      - name: displayTitle
+        label: Hero Title
+        type: string
+        description: Use &shy; to add optional soft hyphenation for long words.
+      - name: subtitle
+        label: Subtitle
+        type: string
+      - name: siteName
+        label: Site Name
+        type: string
+      - name: congress
+        label: Page Sections
+        type: object
+        fields:
+          - name: donate
+            label: Donation Section
+            type: object
+            fields:
+              - name: title
+                label: Title
+                type: string
+              - name: text
+                label: Body Text
+                type: text
+              - name: ctaLabel
+                label: Button Label
+                type: string
+              - name: href
+                label: Donation URL
+                type: string
+          - name: quickFacts
+            label: Hero Quick Facts
+            type: object
+            list: true
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: value
+                label: Value
+                type: string
+          - name: intro
+            label: Intro Section
+            type: object
+            fields:
+              - name: paragraphs
+                label: Paragraphs
+                type: text
+                list: true
+          - name: speakers
+            label: Talks
+            type: object
+            list: true
+            fields:
+              - name: day
+                label: Day Key
+                type: string
+              - name: badge
+                label: Badge
+                type: string
+              - name: image
+                label: Card Image
+                type: image
+              - name: imageAlt
+                label: Image Alt
+                type: string
+              - name: name
+                label: Speaker Name
+                type: string
+                description: Use &shy; to add optional soft hyphenation for long words.
+              - name: org
+                label: Organization
+                type: string
+              - name: session
+                label: Time
+                type: string
+              - name: topic
+                label: Topic
+                type: string
+          - name: framework
+            label: Supporting Program
+            type: object
+            fields:
+              - name: title
+                label: Section Title
+                type: string
+                description: Use &shy; to add optional soft hyphenation for long words.
+              - name: items
+                label: Entries
+                type: object
+                list: true
+                fields:
+                  - name: image
+                    label: Image
+                    type: image
+                  - name: imageAlt
+                    label: Image Alt
+                    type: string
+                  - name: title
+                    label: Title
+                    type: string
+                  - name: eyebrow
+                    label: Eyebrow
+                    type: string
+                  - name: paragraphs
+                    label: Paragraphs
+                    type: text
+                    list: true
+          - name: faq
+            label: FAQ Section
+            type: object
+            fields:
+              - name: title
+                label: Section Title
+                type: string
+              - name: heading
+                label: Legacy Heading
+                type: string
+              - name: items
+                label: FAQ Items
+                type: object
+                list: true
+                fields:
+                  - name: question
+                    label: Question
+                    type: string
+                    description: Use &shy; to add optional soft hyphenation for long words.
+                  - name: answer
+                    label: Answer
+                    type: text
+              - name: team
+                label: Contact Cards
+                type: object
+                list: true
+                fields:
+                  - name: name
+                    label: Name
+                    type: string
+                  - name: org
+                    label: Description
+                    type: string
+                  - name: emailUser
+                    label: Email User Part
+                    type: string
+                  - name: emailDomain
+                    label: Email Domain Part
+                    type: string
+                  - name: emailTld
+                    label: Email TLD
+                    type: string
+          - name: exclusion
+            label: Exclusion Clause
+            type: object
+            fields:
+              - name: labelLines
+                label: Label Lines
+                type: string
+                list: true
+              - name: paragraphs
+                label: Paragraphs
+                type: text
+                list: true
+          - name: imprint
+            label: Imprint
+            type: object
+            fields:
+              - name: heading
+                label: Section Title
+                type: string
+              - name: paragraphs
+                label: Paragraphs
+                type: text
+                list: true

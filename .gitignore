@@ -62,6 +62,15 @@ typings/
 
 # eleventy.js build output
 dist
+output/
+src/_site/
+
+# macOS
+.DS_Store
+
+# local agent tooling
+.agents/
+skills-lock.json
 
 # deploy script
 deploy.js

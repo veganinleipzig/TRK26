@@ -1,16 +1,14 @@
-<section id="donation-section" class="main">
-    <h1>Unterstütze uns</h1>
+<section id="donation-section" class="generic-section">
+    <h1><strong>{{ congress.donate.title }}</strong></h1>
 </section>
 
-<!-- twingle -->
-<script type="text/javascript">
-	(function() {
-		var u="https://spenden.twingle.de/embed/transformation-fordern-e-v/tierrechtskongress/tw6983028ce7f5e/form";
-		var id = '_' + Math.random().toString(36).substr(2, 9);
-		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0], t=d.createElement('div');
-        t.id = 'twingle-public-embed-' + id;
-        document.currentScript.after(t);
-		g.type='text/javascript'; g.async=true; g.id='tw-' + id; g.defer=true; g.src=u; s.parentNode.insertBefore(g,s);
-	})();
-</script>
-<!-- twingle -->
+<div class="donation-cta">
+    <div class="donation-copy">
+        <p>{{ congress.donate.text }}</p>
+    </div>
+    <div class="donation-action">
+        <a href="{{ congress.donate.href }}" target="_blank" rel="noopener noreferrer">
+            {{ congress.donate.ctaLabel }}
+        </a>
+    </div>
+</div>
