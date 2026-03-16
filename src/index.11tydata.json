@@ -276,7 +276,7 @@
           "name": "Kontakt",
           "org": "Fragen rund um Teilnahme und Ablauf",
           "emailUser": "kongress",
-          "emailDomain": "vegan-in-leipzig.",
+          "emailDomain": "vegan-in-leipzig",
           "emailTld": "de"
         }
       ]
@@ -291,9 +291,10 @@
       "heading": "Impressum",
       "paragraphs": [
         "Angaben gemäß § 5 TMG",
-        "Verantwortlich für diese Website ist eine Gruppe von Freiwilligen aus Leipziger veganen und Tierbefreiungsgruppen. Die vollständigen Kontaktdaten und die ladungsfähige Anschrift werden hier noch ergänzt.",
-        "Kontakt: kontakt-ersetzen [at] beispiel-domain-ersetzen [punkt] de",
-        "Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV: Angaben folgen.",
+        "Tierrechtskongress Leipzig – Organisationsgruppe\n",
+        "Lutherstr. 15\n04315 Leipzig\nDeutschland\n",
+        "Vertreten durch:\nMarie Böhme\nRichard Böhme\n",
+        "Telefon: +49 (0)156 79796840\nE-Mail: kongress [at ]vegan-in-leipzig [punkt ]de\n",
         "Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber*innen verantwortlich."
       ]
     }
