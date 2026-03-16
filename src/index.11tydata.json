@@ -58,32 +58,27 @@
     },
     "quickFacts": [
       {
-        "icon": "clock",
         "label": "Zeit",
-        "value": "23.-24.05.2026"
+        "value": "23.-24.05.2026 10-19Uhr"
       },
       {
-        "icon": "map-pin",
         "label": "Ort",
-        "value": "Ostwache, Leipzig",
-        "href": "https://www.openstreetmap.org/?mlat=51.3366735&mlon=12.419064#map=14/51.33667/12.41906"
+        "value": "Ostwache, Leipzig"
       },
       {
-        "icon": "coins",
         "label": "Eintritt",
         "value": "kostenlos"
       },
       {
-        "icon": "microphone-alt",
         "label": "Vorträge",
         "value": "10"
       }
     ],
     "intro": {
       "paragraphs": [
-        "Am Wochenende vom 23. bis 24. Mai 2026 findet in der Ostwache in Leipzig der Leipziger Tierrechtskongress statt. Organisiert wird der Kongress von einer Gruppe Freiwilliger aus vielen Leipziger veganen und Tierbefreiungsgruppen.",
-        "Dabei setzen sich zahlreiche Referent*innen inhaltlich und kritisch mit verschiedenen Aspekten der Arbeit für Tierbefreiung und Tierrechte auseinander. Es wird Vorträge zu Tierrettung aus Krisengebieten, Tierethik, Ausstieg aus der Tierwirtschaft, antispeziesistische Arbeit im Bildungskontext und weiteren spannenden Themen geben.",
-        "Der Kongress wird neben den Vorträgen auch Zeit für informellen Austausch sowie Anschlussdiskussionen mit den Referent*innen bieten. Das Ziel des Kongresses ist, die Tierbewegung und interessierte Personen zu vernetzen sowie gemeinsame Schnittmengen und Herausforderungen aktivistischer Praxis zu diskutieren."
+        "Am Wochenende vom 23. bis 24. Mai 2026 findet in der Ostwache in Leipzig der Tierrechtskongress Leipzig statt. Organisiert wird der Kongress von einer Gruppe Freiwilliger lokaler und veganer Tierbefreiungsgruppen.\n",
+        "Dabei setzen sich zahlreiche Referent*innen inhaltlich und kritisch mit verschiedenen Perspektiven der Arbeit für Tierbefreiung und Tierrechte auseinander. Es wird Vorträge zu Tierethik, Tierrecht, Tierrettung aus Krisengebieten, Ausstieg aus der Tierwirtschaft, antispeziesistische Arbeit im Bildungskontext und weiteren spannenden Themen geben. Darüber hinaus sind Podiumsdiskussionen zu Aktionsformen wie Kampagnen und zivilem Ungehorsam geplant.\n",
+        "Neben den Vorträgen wird der Kongress auch Zeit für informellen Austausch sowie Anschlussdiskussionen mit den Referent:innen bieten. Ziel des Kongresses ist es, die Tierbewegung und interessierte Personen zu vernetzen sowie gemeinsame Schnittmengen und Herausforderungen aktivistischer Praxis zu diskutieren.\n"
       ]
     },
     "overview": {
@@ -207,22 +202,26 @@
       "items": [
         {
           "image": "/images/placedog/framework-01.jpg",
-          "imageAlt": "Hartmut Kiewert",
-          "title": "Hartmut Kiewert",
+          "imageAlt": "Village",
+          "title": "Village",
           "eyebrow": "Posterstand",
           "paragraphs": [
-            "Seit 2008 setzt sich der Künstler Hartmut Kiewert in seiner Malerei mit dem Mensch-Tier-Verhältnis auseinander und stellt tradierte Normen und Machtverhältnisse in Frage. Seine Bilder zeigen utopische Perspektiven, in denen Tiere befreit sind und sich Räume zurückholen, die sonst von Menschen dominiert werden.",
-            "Hartmut arbeitet mit veganen Materialien und verbindet seine Kunst mit herrschaftskritischen Fragen rund um Tierausbeutung und andere Formen von Unterdrückung."
+            "Neben den Vorträgen gibt es im Freien unser Village, einen offenen Raum für Austausch, Vernetzung und Entspannung. Hier treffen Initiativen, Aktivist*innengruppen, Kollektive und Projekte aus der Tierrechts- und Tierbefreiungsbewegung aufeinander.\n",
+            "An den Infoständen stellen verschiedene Gruppen ihre Arbeit vor, berichten von ihren Erfahrungen aus Kampagnen und Aktionen und laden zum Gespräch ein. Das Village soll ein Ort sein, an dem Wissen weitergegeben wird, an dem neue Kontakte entstehen und an dem vielleicht auch Ideen für zukünftige Projekte wachsen.\n",
+            "Daneben findet ihr Stände mit Kunst und Literatur aus der Szene sowie Möglichkeiten für Drucke und Prints. Auch eine Tätowiererin wird vor Ort sein und passende Motive anbieten.\n",
+            "Das Village bietet einen gemeinsamen Raum zum Treffen, Diskutieren, Vernetzen und Durchatmen zwischen den Programmpunkten\n"
           ]
         },
         {
           "image": "/images/placedog/framework-02-new.jpg",
-          "imageAlt": "Küfa",
-          "title": "Küfa",
+          "imageAlt": "Gastro",
+          "title": "Gastro",
           "eyebrow": "Essensstand",
           "paragraphs": [
-            "An beiden Tagen wird es eine vegane Küfa geben. Dort bekommst du warmes Essen, Kaffee, Kuchen und kleine Snacks gegen Spende.",
-            "Die Küfa schafft Raum für Begegnung zwischen den Vorträgen und ist ein guter Ort, um ins Gespräch zu kommen, sich zu vernetzen und zwischendurch kurz durchzuatmen."
+            "Während des Kongresses wird es eine Küfa (Küche für alle) geben, die euch mit warmem, veganem Essen und Snacks versorgt. Gekocht wird solidarisch und gemeinschaftlich: Einfaches, gutes Essen für alle, die da sind.\n",
+            "Außerdem stehen über den Tag verteilt Wasser und Kaffee bereit, damit ihr zwischen Gesprächen und Programmpunkten kurz durchatmen könnt.\n",
+            "Alle Speisen und Getränke sind kostenlos. Wenn ihr könnt und möchtet, freuen wir uns über eine Spende, um die Kosten für Lebensmittel, Infrastruktur und das Kongressprogramm mitzutragen.\n",
+            "Alle sind willkommen, unabhängig vom Geldbeutel.\n"
           ]
         }
       ]
@@ -233,51 +232,51 @@
       "items": [
         {
           "question": "Kostet die Teilnahme etwas?",
-          "answer": "Nein, die Teilnahme am Leipziger Tierrechtskongress ist kostenlos. Da der Kongress dennoch erhebliche Kosten verursacht, wird es vor Ort die Möglichkeit geben, freiwillig zu spenden."
+          "answer": "Nein, die Teilnahme am Tierrechtskongress Leipzig 2026 ist kostenlos. Da der Kongress dennoch Kosten verursacht, wird es vor Ort die Möglichkeit geben, freiwillig zu spenden.\n"
         },
         {
           "question": "Wo findet der Kongress statt?",
-          "answer": "Der Kongress findet 2026 in der Ostwache in Leipzig statt. Wir freuen uns sehr, dort einen Ort gefunden zu haben, an dem Vorträge, Austausch und Rahmenprogramm zusammenkommen können."
+          "answer": "Der Kongress findet 2026 in der Ostwache in Leipzig statt. Wir freuen uns sehr, dort einen Ort gefunden zu haben, an dem Vorträge, Austausch und Rahmenprogramm zusammenkommen können.\n"
         },
         {
           "question": "Was passiert bei Regen?",
-          "answer": "Natürlich hoffen wir auf gutes Wetter. Falls es regnet, werden wir den Außenbereich so gut es geht mit Pavillons und Zelten überdachen, sodass geplante Aktivitäten und Stände weiterhin stattfinden können. Die Vorträge finden drinnen statt."
+          "answer": "Natürlich hoffen wir auf gutes Wetter. Falls es regnet, werden wir den Außenbereich so gut es geht mit Pavillons und Zelten überdachen, sodass geplante Aktivitäten und Stände weiterhin stattfinden können. Die Vorträge finden drinnen statt.\n"
         },
         {
           "question": "Gibt es vor Ort etwas zu essen und trinken?",
-          "answer": "Ja. Vor Ort wird es eine vegane Küfa mit warmem Essen, Kaffee, Kuchen und kleinen Snacks gegen Spende geben."
+          "answer": "Ja. Es wird eine vegane Küfa mit warmem Essen, Kuchen und kleinen Snacks gegen Spende geben. Außerdem stellen wir Wasser, Kaffee und andere Getränke zur Verfügung.\n"
         },
         {
           "question": "Ist der Kongress barrierefrei?",
-          "answer": "Unser Anspruch ist es, den Tierrechtskongress für möglichst viele Menschen zugänglich zu machen. Wir versuchen, dass Veranstaltungen und Verpflegungsangebote auch für Menschen mit Gehbehinderung gut erreichbar sind und geeignete sanitäre Anlagen zur Verfügung stehen. Wenn ihr konkrete Bedarfe habt, schreibt uns bitte vorab, damit wir uns möglichst gut darauf einstellen können."
+          "answer": "Ja. Das gesamte Außengelände und der Saal sind barrierefrei. Unser Anspruch ist es, den Tierrechtskongress für möglichst viele Menschen zugänglich zu machen. Wir versuchen, dass Veranstaltungen und Verpflegungsangebote auch für Menschen mit Gehbehinderung gut erreichbar sind und geeignete sanitäre Anlagen zur Verfügung stehen. Wenn ihr konkrete Bedarfe habt, schreibt uns bitte vorab, damit wir uns möglichst gut darauf einstellen können.\n"
         },
         {
           "question": "Darf ich meinen Hund mitbringen?",
-          "answer": "Falls es euch nicht anders möglich ist, dürfen Hunde und andere Tiere mitgebracht werden. Bitte führt sie immer an der Leine und verlasst den Raum, wenn sie unruhig werden, damit Vorträge und Gespräche nicht gestört werden."
+          "answer": "Falls es euch nicht anders möglich ist, dürfen Hunde und andere Tiere mitgebracht werden. Bitte führt sie immer an der Leine und verlasst den Raum, wenn sie unruhig werden, damit Vorträge und Gespräche nicht gestört werden. Wir werden eine kleine Wasser- und Snack-Station für Hunde bereitstellen.\n"
         },
         {
           "question": "Gibt es eine Quote für Referent*innen?",
-          "answer": "FLINTA*-Personen sind in der Tierrechts- und Tierbefreiungsbewegung stark vertreten. Deshalb versuchen wir auch bei den Vorträgen, deutlich mehr FLINTA*-Personen als Referent*innen zu gewinnen."
+          "answer": "FLINTA*-Personen sind in der Tierrechts- und Tierbefreiungsbewegung stark vertreten. Deshalb versuchen wir auch bei den Vorträgen, deutlich mehr FLINTA*-Personen als Referent*innen zu gewinnen.\n"
         },
         {
           "question": "Ich bin nicht sehr tief in der Materie drin. Ist der Kongress trotzdem etwas für mich?",
-          "answer": "Ja. Der Kongress soll ausdrücklich auch Menschen ansprechen, die sich neu oder erst seit kurzem mit Tierrechten und Tierbefreiung beschäftigen. Er bietet die Möglichkeit, Wissen zu vertiefen, mit anderen ins Gespräch zu kommen und vielleicht selbst Lust auf weiteres Engagement zu bekommen."
+          "answer": "Ja. Der Kongress soll ausdrücklich auch Menschen ansprechen, die sich neu oder erst seit kurzem mit Tierrechten und Tierbefreiung beschäftigen. Er bietet die Möglichkeit, Wissen zu vertiefen, mit anderen ins Gespräch zu kommen und vielleicht selbst Lust auf weiteres Engagement zu bekommen.\n"
         },
         {
           "question": "Werden die Vorträge aufgezeichnet?",
-          "answer": "Ob und welche Vorträge aufgezeichnet werden, stimmen wir individuell mit den Referent*innen ab. Wenn es möglich ist, möchten wir Vorträge dokumentieren. Unabhängig davon lohnt sich der Besuch vor Ort, weil der Kongress auch dem Austausch und Kennenlernen dient."
+          "answer": "Ob und welche Vorträge aufgezeichnet werden, stimmen wir individuell mit den Referent*innen ab. Wenn es möglich ist, möchten wir Vorträge dokumentieren. Unabhängig davon lohnt sich der Besuch vor Ort, weil der Kongress auch dem Austausch und Kennenlernen dient.\n"
         },
         {
           "question": "Gibt es Möglichkeiten mitzumachen? Braucht ihr Hilfe?",
-          "answer": "Ja. Wir freuen uns über Menschen, die Zeit und Motivation mitbringen und den Kongress unterstützen möchten, etwa beim Auf- und Abbau, Einlass, Awareness, Technik, Übersetzungen oder als Tageshelfer*in. Wenn ihr mitmachen möchtet, schreibt uns gerne."
+          "answer": "Ja. Wir freuen uns über Menschen, die Zeit und Motivation mitbringen und den Kongress unterstützen möchten, etwa beim Auf- und Abbau, Einlass, Awareness, Technik, Übersetzungen oder als Tageshelfer*in. Wenn ihr mitmachen möchtet, schreibt uns gerne.\n"
         }
       ],
       "team": [
         {
           "name": "Kontakt",
           "org": "Fragen rund um Teilnahme und Ablauf",
-          "emailUser": "kontakt-ersetzen",
-          "emailDomain": "beispiel-domain-ersetzen",
+          "emailUser": "kongress",
+          "emailDomain": "vegan-in-leipzig.",
           "emailTld": "de"
         }
       ]
