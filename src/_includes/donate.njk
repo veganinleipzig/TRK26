@@ -1,14 +1,14 @@
 <section id="donation-section" class="generic-section">
-    <h1><strong>{{ congress.donate.title }}</strong></h1>
+    <h1><strong>{{ congress.donate.title | cmsInline | safe }}</strong></h1>
 </section>
 
 <div class="donation-cta">
     <div class="donation-copy">
-        <p>{{ congress.donate.text }}</p>
+        <p>{{ congress.donate.text | cmsInline | safe }}</p>
     </div>
     <div class="donation-action">
         <a href="{{ congress.donate.href }}" target="_blank" rel="noopener noreferrer">
-            {{ congress.donate.ctaLabel }}
+            {{ congress.donate.ctaLabel | cmsInline | safe }}
         </a>
     </div>
 </div>

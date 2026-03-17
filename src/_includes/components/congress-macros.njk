@@ -20,24 +20,26 @@
         {% if section.image %}
         <img src="{{ section.image | url }}" alt="{{ section.imageAlt or section.title or section.label or ui.fallbackImageAlt }}">
         {% elif section.labelLines %}
-        {{ section.labelLines | join('<br>') | safe }}
+        {% for line in section.labelLines %}
+        {{ line | cmsInline | safe }}{% if not loop.last %}<br>{% endif %}
+        {% endfor %}
         {% else %}
-        {{ section.label | safe }}
+        {{ section.label | cmsInline | safe }}
         {% endif %}
     </div>
     {% endif %}
     <div class="info-content">
         {% if section.title %}
-        <h2>{{ section.title | safe }}</h2>
+        <h2>{{ section.title | cmsInline | safe }}</h2>
         {% endif %}
         {% if section.eyebrow %}
-        <strong>{{ section.eyebrow | safe }}</strong>
+        <strong>{{ section.eyebrow | cmsInline | safe }}</strong>
         {% endif %}
         {% for paragraph in section.paragraphs or [] %}
-        <p>{{ paragraph }}</p>
+        <p>{{ paragraph | cmsInline | safe }}</p>
         {% endfor %}
         {% for line in section.lines or [] %}
-        <div class="info-item">{{ line }}</div>
+        <div class="info-item">{{ line | cmsInline | safe }}</div>
         {% endfor %}
     </div>
 </div>
@@ -51,29 +53,29 @@
     <div class="speaker-info">
         {% if speaker.badge %}
         <div class="speaker-status">
-            <span class="badge-opt">{{ speaker.badge }}</span>
+            <span class="badge-opt">{{ speaker.badge | cmsInline | safe }}</span>
         </div>
         {% endif %}
         <div class="speaker-header">
-            <h3 class="speaker-name">{{ speaker.name | safe }}</h3>
+            <h3 class="speaker-name">{{ speaker.name | cmsInline | safe }}</h3>
             {% if speaker.session %}
             <div class="speaker-session">
                 <i class="fa-solid fa-clock" aria-hidden="true"></i>
-                <span>{{ speaker.session }}</span>
+                <span>{{ speaker.session | cmsInline | safe }}</span>
             </div>
             {% endif %}
         </div>
         {% if speaker.org %}
-        <span class="speaker-org">{{ speaker.org | safe }}</span>
+        <span class="speaker-org">{{ speaker.org | cmsInline | safe }}</span>
         {% endif %}
-        <p class="speaker-topic"><strong>{{ ui.speakerTopicLabel }}</strong> {{ speaker.topic | safe }}</p>
+        <p class="speaker-topic"><strong>{{ ui.speakerTopicLabel }}</strong> {{ speaker.topic | cmsInline | safe }}</p>
     </div>
 </div>
 {% endmacro %}
 
 {% macro sectionBanner(title) %}
 <div class="generic-section">
-    <h1><strong>{{ title | safe }}</strong></h1>
+    <h1><strong>{{ title | cmsInline | safe }}</strong></h1>
 </div>
 {% endmacro %}
 
@@ -84,8 +86,8 @@
 {% macro teamMember(member, ui) %}
 <div class="speaker-card team-member">
     <div class="speaker-info">
-        <h3 class="speaker-name">{{ member.name }}</h3>
-        <span class="speaker-org">{{ member.org }}</span>
+        <h3 class="speaker-name">{{ member.name | cmsInline | safe }}</h3>
+        <span class="speaker-org">{{ member.org | cmsInline | safe }}</span>
         <p class="speaker-topic">
             <strong>{{ ui.emailLabel }}</strong>
             <span class="mail-obfuscation" aria-label="{{ ui.emailAriaLabel }}">
@@ -96,7 +98,7 @@
                 <span>{{ member.emailTld }}</span>
             </span>
         </p>
-        <p class="contact-note">{{ ui.emailHint }}</p>
+        <p class="contact-note">{{ ui.emailHint | cmsInline | safe }}</p>
     </div>
 </div>
 {% endmacro %}
@@ -104,10 +106,10 @@
 {% macro noteCard(section) %}
 <div class="sidebar-note">
     {% if section.title %}
-    <h3>{{ section.title | safe }}</h3>
+    <h3>{{ section.title | cmsInline | safe }}</h3>
     {% endif %}
     {% for paragraph in section.paragraphs or [] %}
-    <p>{{ paragraph }}</p>
+    <p>{{ paragraph | cmsInline | safe }}</p>
     {% endfor %}
 </div>
 {% endmacro %}

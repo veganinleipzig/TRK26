@@ -4,18 +4,18 @@
     </div>
     <div class="hero-overlay">
         <div class="hero-copy">
-            <h1>{{ (displayTitle or title) | safe }}</h1>
+            <h1>{{ (displayTitle or title) | cmsInline | safe }}</h1>
         </div>
         <div class="info-line hero-info-line">
             {% for fact in congress.quickFacts %}
             <div class="icon">
                 <span class="fact-icon fa-solid fa-{{ fact.icon }}" aria-hidden="true"></span>
                 <div class="fact-copy">
-                    <span class="label">{{ fact.label }}</span>
+                    <span class="label">{{ fact.label | cmsInline | safe }}</span>
                     {% if fact.href %}
-                    <a class="value fact-link" href="{{ fact.href }}" target="_blank" rel="noopener noreferrer">{{ fact.value }}</a>
+                    <a class="value fact-link" href="{{ fact.href }}" target="_blank" rel="noopener noreferrer">{{ fact.value | cmsInline | safe }}</a>
                     {% else %}
-                    <span class="value">{{ fact.value }}</span>
+                    <span class="value">{{ fact.value | cmsInline | safe }}</span>
                     {% endif %}
                 </div>
             </div>

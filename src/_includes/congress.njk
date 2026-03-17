@@ -18,7 +18,7 @@ layout: layouts/base.njk
 <div class="program-days-grid">
 {% for day in congress.overview.days %}
 <section class="program-day">
-    <h3>{{ day.label | safe }}</h3>
+    <h3>{{ day.label | cmsInline | safe }}</h3>
     {% for speaker in congress.speakers %}
     {% if speaker.day == day.key %}
     {{ speakerCard(speaker, ui) }}
@@ -43,9 +43,9 @@ layout: layouts/base.njk
     <div class="faq-column">
         {% for item in congress.faq.items %}
         <details>
-            <summary>{{ item.question | safe }}</summary>
+            <summary>{{ item.question | cmsInline | safe }}</summary>
             <div class="details-content">
-                {{ item.answer | safe }}
+                {{ item.answer | cmsBlock | safe }}
             </div>
         </details>
         {% endfor %}
